@@ -2,8 +2,10 @@
     text-decoration: none;
 }
 
-.hero {
-    height: 15vh;
+.logo {
+    text-align: center;
+    height: 40vh;
+    padding: 10px;
 }
 .sessions {
     height: 15vh;
