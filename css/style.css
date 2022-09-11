@@ -1,18 +1,33 @@
-.footer-link {
-    text-decoration: none;
-}
-
 .logo {
     text-align: center;
     height: 40vh;
     padding: 10px;
 }
+.why-grid {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.why-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    background-image: url(/devfest22/img/BackgroundStars.jpg);
+    /*background-image from Unsplash, title: paul-volkmer-qVotvbsuM_c-unsplash*/
+}
+.footer-link {
+    text-decoration: none;
+}
+
+/*In Process*/
 .sessions {
     height: 15vh;
 }
 .speakers {
-    height: 15vh;
-}
-.attend {
     height: 15vh;
 }
