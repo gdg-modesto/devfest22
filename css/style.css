@@ -5,6 +5,14 @@
     padding: 10px;
 }
 
+/* Speakers Sections*/
+.speaker-grid {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Sessions Section */
 .info-grid {
     display: flex;
@@ -45,10 +53,6 @@
 }
 
 /*In Process*/
-.speakers {
-    height: 20vh;
-    border: 2px solid green;
-}
 .sponsors {
     height: 20vh;
     border: 2px solid green;
