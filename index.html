@@ -15,8 +15,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <title>DevFest 2022</title>
   </head>
@@ -50,6 +50,58 @@
         </div>
       </div>
     </nav>
+
+    <section class="register container" id="register">
+      
+      <!-- Button that overlays a modal window -->
+      <div>
+        <!-- Noscript content for added SEO -->
+        <noscript><a href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+        <!-- You can customize this button any way you like -->
+        <button id="eventbrite-widget-modal-trigger-404767429277" type="button">Buy Tickets</button>
+
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function() {
+                console.log('Order complete!');
+            };
+
+            window.EBWidgets.createWidget({
+                widgetType: 'checkout',
+                eventId: '404767429277',
+                modal: true,
+                modalTriggerElementId: 'eventbrite-widget-modal-trigger-404767429277',
+                onOrderComplete: exampleCallback
+            });
+        </script>
+      </div>
+
+      <!-- Embedded within content on the page -->
+      <div>
+        <div id="eventbrite-widget-container-404767429277"></div>
+
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function() {
+                console.log('Order complete!');
+            };
+
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '404767429277',
+                iframeContainerId: 'eventbrite-widget-container-404767429277',
+
+                // Optional
+                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
+      </div>
+
+    </section>
 
     <section class="hero container" id="home">
       <div class="row">
