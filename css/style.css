@@ -1,3 +1,8 @@
+/* Global */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Home-Hero Section */
 .logo {
     text-align: center;
