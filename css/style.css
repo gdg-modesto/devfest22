@@ -12,6 +12,16 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.speaker-image {
+    height: 165px;
+    width: 165px;
+    object-fit: cover;
+}
+.speaker-box {
+    border-radius: 10px;
+    background-image: url(/devfest22/img/BackgroundStars.jpg);
+    /*background-image from Unsplash, title: paul-volkmer-qVotvbsuM_c-unsplash*/
+}
 
 /* Sessions Section */
 .info-grid {
