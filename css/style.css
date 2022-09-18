@@ -1,3 +1,8 @@
+/* Global */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Home-Hero Section */
 .logo {
     text-align: center;
@@ -57,13 +62,24 @@
     /*background-image from Unsplash, title: paul-volkmer-qVotvbsuM_c-unsplash*/
 }
 
+/*Sponsors Section*/
+.sponsor-grid {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.sponsor-image {
+    width: 20%;
+    height: 20%;
+}
+@media (max-width: 576px) {
+.sponsor-image {
+    width: 30%;
+    height: 20%;
+}}
+
 /* Footer */
 .footer-link {
     text-decoration: none;
-}
-
-/*In Process*/
-.sponsors {
-    height: 20vh;
-    border: 2px solid green;
 }
