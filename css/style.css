@@ -17,6 +17,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+.card {
+    width: 250px;
+}
+.speakerMain-image {
+    height: 248px;
+    width: 248px;
+    object-fit: cover;
+}
 .speaker-image {
     height: 165px;
     width: 165px;
