@@ -25,11 +25,6 @@ body {
     width: 248px;
     object-fit: cover;
 }
-.speaker-image {
-    height: 165px;
-    width: 165px;
-    object-fit: cover;
-}
 .speaker-box {
     border-radius: 10px;
     background-image: url(/devfest22/img/BackgroundStars.jpg);
