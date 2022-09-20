@@ -51,58 +51,6 @@
       </div>
     </nav>
 
-    <section class="register container" id="register">
-      
-      <!-- Button that overlays a modal window -->
-      <div>
-        <!-- Noscript content for added SEO -->
-        <noscript><a href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
-        <!-- You can customize this button any way you like -->
-        <button id="eventbrite-widget-modal-trigger-404767429277" type="button">Buy Tickets</button>
-
-        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-        <script type="text/javascript">
-            var exampleCallback = function() {
-                console.log('Order complete!');
-            };
-
-            window.EBWidgets.createWidget({
-                widgetType: 'checkout',
-                eventId: '404767429277',
-                modal: true,
-                modalTriggerElementId: 'eventbrite-widget-modal-trigger-404767429277',
-                onOrderComplete: exampleCallback
-            });
-        </script>
-      </div>
-
-      <!-- Embedded within content on the page -->
-      <div>
-        <div id="eventbrite-widget-container-404767429277"></div>
-
-        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-        <script type="text/javascript">
-            var exampleCallback = function() {
-                console.log('Order complete!');
-            };
-
-            window.EBWidgets.createWidget({
-                // Required
-                widgetType: 'checkout',
-                eventId: '404767429277',
-                iframeContainerId: 'eventbrite-widget-container-404767429277',
-
-                // Optional
-                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-            });
-        </script>
-      </div>
-
-    </section>
-
     <section class="hero container" id="home">
       <div class="row">
         <div class="col-lg-4 text-center">
@@ -135,21 +83,38 @@
             together in one location to learn, discuss and experiment with
             technology.
           </p>
-          <a
-            type="button"
-            class="btn btn-warning fw-bold"
-            href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277"
-          >
-            Register
-          </a>
+             <!-- Button that overlays a modal window -->
+          <div>
+            <!-- Noscript content for added SEO -->
+            <noscript><a href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+            <!-- You can customize this button any way you like -->
+            <button id="eventbrite-widget-modal-trigger-404767429277" type="button" class="btn btn-warning fw-bold">Register</button>
+
+            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    widgetType: 'checkout',
+                    eventId: '404767429277',
+                    modal: true,
+                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-404767429277',
+                    onOrderComplete: exampleCallback
+                });
+            </script>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="speakers text-center" id="speakers">
-      <h2 class="mt-5">Speakers</h2>
+      <h2 class="mt-5">Featured Speakers</h2>
       <p class="text-secondary">
-        Experienced in their respective fields with laudable achievements.
+        We are excited to bring a variety of technical experts to DevFest
+        Modesto!
       </p>
       <a
             type="button"
@@ -307,8 +272,7 @@
                       <div class="modal-body text-start">
                         <span class="fw-bold">Kirsten Villa (she/her)</span>
                         <br>
-                        <span class="fw-bold">ICS System Admin/Network Security Engineer</span>
-                        <span class="fw-bold">TekSynap/Livermore Lab</span>
+                        <span class="fw-bold">ICS System Admin | TekSynap</span>
                         <br>
                         <br>
                         Kirsten Villa is an ICS System Administrator with a variety of industry recognized certifications for Information Security.

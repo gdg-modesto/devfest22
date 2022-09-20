@@ -68,7 +68,7 @@
     </nav>
 
     <section class="speakers text-center">
-      <h2 class="mt-5">Featured Speakers</h2>
+      <h2 class="mt-5">Speakers</h2>
       <p class="text-secondary">
         We are excited to bring a variety of technical experts to DevFest
         Modesto!
@@ -576,6 +576,32 @@
             ></a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="register container" id="register">
+      <!-- Embedded within content on the page -->
+      <div>
+        <div id="eventbrite-widget-container-404767429277"></div>
+
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+          var exampleCallback = function () {
+            console.log("Order complete!");
+          };
+
+          window.EBWidgets.createWidget({
+            // Required
+            widgetType: "checkout",
+            eventId: "404767429277",
+            iframeContainerId: "eventbrite-widget-container-404767429277",
+
+            // Optional
+            iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback, // Method called when an order has successfully completed
+          });
+        </script>
       </div>
     </section>
 
