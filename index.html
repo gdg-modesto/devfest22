@@ -14,9 +14,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <title>DevFest 2022</title>
   </head>
@@ -44,66 +47,86 @@
               <li><a class="nav-link" href="#speakers">Speakers</a></li>
               <li><a class="nav-link" href="#sessions">Sessions</a></li>
               <li><a class="nav-link" href="#attend">Why Attend</a></li>
-              <li><a class="nav-link" href="#sponsors">Sponsors</a></li>             
+              <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="hero container" id="home">
+    <section class="hero container mt-2" id="home">
       <div class="row">
         <div class="col-lg-4 text-center">
-          <img
-            class="logo mx-auto"
-            src="./img/DevWarsSticker.png"
-            alt="DevWars logo"
-          />
+          <div class="logo-box">
+            <img
+              class="logo"
+              src="./img/DevWarsSticker.png"
+              alt="DevWars logo"
+            />
+          </div>
         </div>
         <div class="col-lg-8 text-center">
-          <h1 class="text-center">DevWars <br>[A DevFest 2022 Conference]</h1>
-          <h4 class="text-center">
+          <h1>DevWars</h1>
+          <h2 class="mb-3">[A DevFest 2022 Conference]</h2>
+          <h4>
             <i class="bi bi-clock-fill text-warning fs-4"></i>Friday, October
-            28, 2022 | 4:00 PM - 8:00 PM PST
+            28, 2022
           </h4>
-          <h5 class="text-center">
+          <h4 class="mb-3">4:00 PM - 8:00 PM PST</h4>
+          <h5>
             <i class="bi bi-geo-alt-fill text-warning fs-4"></i>Martin G.
-            Petersen Event Center<br />720 12th St Modesto, CA 95354
-            <a
-              class="event-map text-warning fs-5"
-              href="https://goo.gl/maps/g3CibhyJJMPAUiyb7"
-              target="blank"
-            >
-              View Map</a
-            >
+            Petersen Event Center
           </h5>
+          <h5>720 12th St Modesto, CA 95354</h5>
+          <a
+            class="event-map text-warning fs-6"
+            href="https://goo.gl/maps/g3CibhyJJMPAUiyb7"
+            target="blank"
+          >
+            View Map</a
+          >
+          <br />
           <p class="fs-5">
             DevFest is a community-run one-day conference aimed to bring
             technologists, developers, students, tech companies, and speakers
             together in one location to learn, discuss and experiment with
             technology.
           </p>
-             <!-- Button that overlays a modal window -->
+          <!-- Button that overlays a modal window -->
           <div>
             <!-- Noscript content for added SEO -->
-            <noscript><a href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+            <noscript
+              ><a
+                href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Buy Tickets on Eventbrite</a
+              ></noscript
+            >
             <!-- You can customize this button any way you like -->
-            <button id="eventbrite-widget-modal-trigger-404767429277" type="button" class="btn btn-warning fw-bold">Register</button>
+            <button
+              id="eventbrite-widget-modal-trigger-404767429277"
+              type="button"
+              class="btn btn-warning fw-bold"
+            >
+              Register
+            </button>
 
             <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
             <script type="text/javascript">
-                var exampleCallback = function() {
-                    console.log('Order complete!');
-                };
+              var exampleCallback = function () {
+                console.log("Order complete!");
+              };
 
-                window.EBWidgets.createWidget({
-                    widgetType: 'checkout',
-                    eventId: '404767429277',
-                    modal: true,
-                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-404767429277',
-                    onOrderComplete: exampleCallback
-                });
+              window.EBWidgets.createWidget({
+                widgetType: "checkout",
+                eventId: "404767429277",
+                modal: true,
+                modalTriggerElementId:
+                  "eventbrite-widget-modal-trigger-404767429277",
+                onOrderComplete: exampleCallback,
+              });
             </script>
           </div>
         </div>
@@ -116,20 +139,19 @@
         We are excited to bring a variety of technical experts to DevFest
         Modesto!
       </p>
-      <a
-            type="button"
-            class="btn btn-warning fw-bold"
-            href="speakers.html"
-          >
-            View All Speakers
-          </a> 
+      <a type="button" class="btn btn-warning fw-bold" href="speakers.html">
+        View All Speakers
+      </a>
 
       <div class="speaker-grid">
-
         <div class="row row-cols-1 row-cols-md-2 g-4 p-2">
           <div class="col">
             <div class="card text-center">
-              <img src="./img/speakers/JoyDixon.jpg" class="card-img-top speakerMain-image" alt="Speaker-JoyDixon">
+              <img
+                src="./img/speakers/JoyDixon.jpg"
+                class="card-img-top speakerMain-image"
+                alt="Speaker-JoyDixon"
+              />
               <div class="card-body bg-dark">
                 <h5 class="card-title text-light">Joy Dixon</h5>
                 <p class="card-subtitle text-light" style="font-size: 8pt">
@@ -138,42 +160,90 @@
                 <a
                   class="text-warning px-2 fs-5"
                   href="https://www.linkedin.com/in/joysorlyndixon/"
-                  ><i class="bi bi-linkedin"></i></a>
+                  ><i class="bi bi-linkedin"></i
+                ></a>
                 <p class="card-subtitle text-light">Founder & CEO</p>
                 <p class="card-subtitle mb-2 text-light">Mosaic Presence</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-sm btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#modalMain1">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMain1"
+                >
                   Bio
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modalMain1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="modalMain1"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Speaker Bio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Speaker Bio
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                       </div>
                       <div class="modal-body text-start">
                         <span class="fw-bold">Joy Dixon (she/her)</span>
-                        <br>
-                        <span class="fw-bold">Founder & CEO | Mosaic Presence</span>
-                        <br>
-                        <br>
-                        Joy Dixon has worked in the tech industry for 20+ years as an engineering leader, software engineer, technical trainer, and even as a network administrator. Currently, Joy is on her venture capital journey and working with start up founders: advising, investing, and developing their MVPs.
-                        <br>
-                        <br>
-                        Joy holds a Bachelor’s degree in African-American Studies, a Master’s degree in Software Engineering, and several professional certifications. In the course of a diverse career, Joy has lead development teams, designed and developed applications using several languages including Java, Python, SQL, JavaScript, HTML, and Swift. In addition, she has configured and administered networks for global companies.
-                        <br>
-                        <br>
-                        Joy loves learning new technologies and has a great deal of passion for training. In 2008, Joy decided to move into technical training in order to assist people with successfully utilizing technology. Joy has designed and delivered online and in-person, web and game development, courses for the University of Virginia, the Art Institute of California-San Francisco, Academy of Art University as well as AcademyX (professional training center).
-                        <br>
-                        <br>
-                        JEDI, technology, coaching, and investing are Joy’s bliss!
+                        <br />
+                        <span class="fw-bold"
+                          >Founder & CEO | Mosaic Presence</span
+                        >
+                        <br />
+                        <br />
+                        Joy Dixon has worked in the tech industry for 20+ years
+                        as an engineering leader, software engineer, technical
+                        trainer, and even as a network administrator. Currently,
+                        Joy is on her venture capital journey and working with
+                        start up founders: advising, investing, and developing
+                        their MVPs.
+                        <br />
+                        <br />
+                        Joy holds a Bachelor’s degree in African-American
+                        Studies, a Master’s degree in Software Engineering, and
+                        several professional certifications. In the course of a
+                        diverse career, Joy has lead development teams, designed
+                        and developed applications using several languages
+                        including Java, Python, SQL, JavaScript, HTML, and
+                        Swift. In addition, she has configured and administered
+                        networks for global companies.
+                        <br />
+                        <br />
+                        Joy loves learning new technologies and has a great deal
+                        of passion for training. In 2008, Joy decided to move
+                        into technical training in order to assist people with
+                        successfully utilizing technology. Joy has designed and
+                        delivered online and in-person, web and game
+                        development, courses for the University of Virginia, the
+                        Art Institute of California-San Francisco, Academy of
+                        Art University as well as AcademyX (professional
+                        training center).
+                        <br />
+                        <br />
+                        JEDI, technology, coaching, and investing are Joy’s
+                        bliss!
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <button
+                          type="button"
+                          class="btn btn-dark"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -186,7 +256,11 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 p-2">
           <div class="col">
             <div class="card text-center">
-              <img src="./img/speakers/RobertBarrios.jpeg" class="card-img-top speakerMain-image" alt="Speaker-RobertBarrios">
+              <img
+                src="./img/speakers/RobertBarrios.jpeg"
+                class="card-img-top speakerMain-image"
+                alt="Speaker-RobertBarrios"
+              />
               <div class="card-body bg-dark">
                 <h5 class="card-title text-light">Robert Barrios</h5>
                 <p class="card-subtitle text-light" style="font-size: 8pt">
@@ -195,42 +269,91 @@
                 <a
                   class="text-warning px-2 fs-5"
                   href="https://www.linkedin.com/in/robertbarrios/"
-                  ><i class="bi bi-linkedin"></i></a>
-                <p class="card-subtitle text-light">Chief Information Officer</p>
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <p class="card-subtitle text-light">
+                  Chief Information Officer
+                </p>
                 <p class="card-subtitle mb-2 text-light">E & J Gallo Winery</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-sm btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#modalMain2">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMain2"
+                >
                   Bio
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modalMain2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="modalMain2"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Speaker Bio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Speaker Bio
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                       </div>
                       <div class="modal-body text-start">
                         <span class="fw-bold">Robert Barrios (he/him)</span>
-                        <br>
-                        <span class="fw-bold">Chief Information Officer | E & J Gallo Winery</span>
-                        <br>
-                        <br>
-                        Robert Barrios is Chief Information Officer at E&J Gallo Winery. Robert has been with the Winery since 2014 and prior to being the CIO had responsibility for Enterprise Architecture, Quality Assurance, Application Development, Project Management, End User Services, Infrastructure Technology, Information Security, IT Business Office, Data Services, and Business Intelligence. Robert also serves on E&J Gallo Winery’s Diversity and Inclusion Council.
-                        <br>
-                        <br>
-                        Robert serves on several Customer Advisory Boards which includes Optiv and UI Path.
-                        <br>
-                        <br>
-                        Prior to joining E&J Gallo Winery, Robert spent 15 years with Oracle Corporation, with his last role as Vice-President, Software Engineering for Oracle Cloud Services where he ran Fusion Application Hosting, Exadata Hosting, Network/Security Operations, Business Office, Project Management, and the Automation/DevOps group.
-                        <br>
-                        <br>
-                        Robert graduated from California Polytechnic University, Pomona with a Bachelors of Science in Business Administration, majoring in Computer Information Systems. Robert enjoys spending time with his family as well as outdoor activities, such as camping, backpacking, fishing, kayaking, and off-roading.
+                        <br />
+                        <span class="fw-bold"
+                          >Chief Information Officer | E & J Gallo Winery</span
+                        >
+                        <br />
+                        <br />
+                        Robert Barrios is Chief Information Officer at E&J Gallo
+                        Winery. Robert has been with the Winery since 2014 and
+                        prior to being the CIO had responsibility for Enterprise
+                        Architecture, Quality Assurance, Application
+                        Development, Project Management, End User Services,
+                        Infrastructure Technology, Information Security, IT
+                        Business Office, Data Services, and Business
+                        Intelligence. Robert also serves on E&J Gallo Winery’s
+                        Diversity and Inclusion Council.
+                        <br />
+                        <br />
+                        Robert serves on several Customer Advisory Boards which
+                        includes Optiv and UI Path.
+                        <br />
+                        <br />
+                        Prior to joining E&J Gallo Winery, Robert spent 15 years
+                        with Oracle Corporation, with his last role as
+                        Vice-President, Software Engineering for Oracle Cloud
+                        Services where he ran Fusion Application Hosting,
+                        Exadata Hosting, Network/Security Operations, Business
+                        Office, Project Management, and the Automation/DevOps
+                        group.
+                        <br />
+                        <br />
+                        Robert graduated from California Polytechnic University,
+                        Pomona with a Bachelors of Science in Business
+                        Administration, majoring in Computer Information
+                        Systems. Robert enjoys spending time with his family as
+                        well as outdoor activities, such as camping,
+                        backpacking, fishing, kayaking, and off-roading.
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <button
+                          type="button"
+                          class="btn btn-dark"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -243,7 +366,11 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 p-2">
           <div class="col">
             <div class="card text-center">
-              <img src="./img/speakers/KirstenVilla.jpg" class="card-img-top speakerMain-image" alt="Speaker-KirstenVilla">
+              <img
+                src="./img/speakers/KirstenVilla.jpg"
+                class="card-img-top speakerMain-image"
+                alt="Speaker-KirstenVilla"
+              />
               <div class="card-body bg-dark">
                 <h5 class="card-title text-light">Kirsten Villa</h5>
                 <p class="card-subtitle text-light" style="font-size: 8pt">
@@ -252,42 +379,78 @@
                 <a
                   class="text-warning px-2 fs-5"
                   href="https://www.linkedin.com/in/kirsten-villa-gcia-gcih-8b2240b3/"
-                  ><i class="bi bi-linkedin"></i></a>
+                  ><i class="bi bi-linkedin"></i
+                ></a>
                 <p class="card-subtitle text-light">ICS System Admin</p>
                 <p class="card-subtitle mb-2 text-light">TekSynap</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-sm btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#modalMain3">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMain3"
+                >
                   Bio
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modalMain3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="modalMain3"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Speaker Bio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Speaker Bio
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                       </div>
                       <div class="modal-body text-start">
                         <span class="fw-bold">Kirsten Villa (she/her)</span>
-                        <br>
+                        <br />
                         <span class="fw-bold">ICS System Admin | TekSynap</span>
-                        <br>
-                        <br>
-                        Kirsten Villa is an ICS System Administrator with a variety of industry recognized certifications for Information Security.
-                        <br>
-                        <br>
-                        Kirsten is a successful career changer, having previously worked as an electrician before returning to school for a Bachelor's Degree in Computer Science.
-                        <br>
-                        <br>
-                        Post-graduation, she worked as a desktop technician and was promoted numerous times, eventually earning the Regional Lead Technician role. With no more room to grow with that employer, she shifted into Information System Security Officer for Industrial Controls. From there Industrial Controls took center stage, where she combined her IT and ICS knowledge for her current role.
-                        <br>
-                        <br>
-                        Now she is transitioning to her next adventure as a Network Security Engineer.
+                        <br />
+                        <br />
+                        Kirsten Villa is an ICS System Administrator with a
+                        variety of industry recognized certifications for
+                        Information Security.
+                        <br />
+                        <br />
+                        Kirsten is a successful career changer, having
+                        previously worked as an electrician before returning to
+                        school for a Bachelor's Degree in Computer Science.
+                        <br />
+                        <br />
+                        Post-graduation, she worked as a desktop technician and
+                        was promoted numerous times, eventually earning the
+                        Regional Lead Technician role. With no more room to grow
+                        with that employer, she shifted into Information System
+                        Security Officer for Industrial Controls. From there
+                        Industrial Controls took center stage, where she
+                        combined her IT and ICS knowledge for her current role.
+                        <br />
+                        <br />
+                        Now she is transitioning to her next adventure as a
+                        Network Security Engineer.
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <button
+                          type="button"
+                          class="btn btn-dark"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -296,11 +459,15 @@
             </div>
           </div>
         </div>
-        
+
         <div class="row row-cols-1 row-cols-md-2 g-4 p-2">
           <div class="col">
             <div class="card text-center">
-              <img src="./img/speakers/TheresaGonzales.jpg" class="card-img-top speakerMain-image" alt="Speaker-TheresaGonzalez">
+              <img
+                src="./img/speakers/TheresaGonzales.jpg"
+                class="card-img-top speakerMain-image"
+                alt="Speaker-TheresaGonzalez"
+              />
               <div class="card-body bg-dark">
                 <h5 class="card-title text-light">Theresa E. Gonzales</h5>
                 <p class="card-subtitle text-light" style="font-size: 8pt">
@@ -309,42 +476,92 @@
                 <a
                   class="text-warning px-2 fs-5"
                   href="https://www.linkedin.com/in/theresalatinasb2b/"
-                  ><i class="bi bi-linkedin"></i></a>
+                  ><i class="bi bi-linkedin"></i
+                ></a>
                 <p class="card-subtitle text-light">CEO</p>
-                <p class="card-subtitle mb-2 text-light">Latinasb2b.Marketing</p>
+                <p class="card-subtitle mb-2 text-light">
+                  Latinasb2b.Marketing
+                </p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-sm btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#modalMain4">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-warning fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMain4"
+                >
                   Bio
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modalMain4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="modalMain4"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Speaker Bio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Speaker Bio
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                       </div>
                       <div class="modal-body text-start">
-                        <span class="fw-bold">Theresa E. Gonzales (she/her)</span>
-                        <br>
+                        <span class="fw-bold"
+                          >Theresa E. Gonzales (she/her)</span
+                        >
+                        <br />
                         <span class="fw-bold">CEO | Latinasb2b.Marketing</span>
-                        <br>
-                        <br>
-                        Theresa E. Gonzales is a seasoned tech veteran who worked her way up the corporate ladder within Silicon Valley from humble beginnings in Fresno, CA. She has worked for companies such as, Facebook, Google, Oracle, Dell and managed strategic partnerships, such as Salesforce.com. She has launched new market business initiatives for technology products, strategic partnerships and product research initiatives for a better customer experience.
-                        <br>
-                        <br>
-                        Theresa is a graduate of San Francisco State University in Business Administration, Product Management and Innovative Business Models from Berkeley’s Haas School of Business-Executive Education and certificates in Business, Brand & Product Strategy.
-                        <br>
-                        <br>
-                        Theresa started her own business consulting, 5-E Leadership & Marketing and Podcasting Platform, Latinasb2b.com, as a digital marketing and sales consulting organization to bridge small businesses with marketing and technology business models, specifically for women of color and community organizations, to stay competitive and relevant within the global tech environments.
-                        <br>
-                        <br>
-                        Theresa has served on the Board of Girls Inc. of the Island City and The Calculus RoundTable, located in the Bay Area.
+                        <br />
+                        <br />
+                        Theresa E. Gonzales is a seasoned tech veteran who
+                        worked her way up the corporate ladder within Silicon
+                        Valley from humble beginnings in Fresno, CA. She has
+                        worked for companies such as, Facebook, Google, Oracle,
+                        Dell and managed strategic partnerships, such as
+                        Salesforce.com. She has launched new market business
+                        initiatives for technology products, strategic
+                        partnerships and product research initiatives for a
+                        better customer experience.
+                        <br />
+                        <br />
+                        Theresa is a graduate of San Francisco State University
+                        in Business Administration, Product Management and
+                        Innovative Business Models from Berkeley’s Haas School
+                        of Business-Executive Education and certificates in
+                        Business, Brand & Product Strategy.
+                        <br />
+                        <br />
+                        Theresa started her own business consulting, 5-E
+                        Leadership & Marketing and Podcasting Platform,
+                        Latinasb2b.com, as a digital marketing and sales
+                        consulting organization to bridge small businesses with
+                        marketing and technology business models, specifically
+                        for women of color and community organizations, to stay
+                        competitive and relevant within the global tech
+                        environments.
+                        <br />
+                        <br />
+                        Theresa has served on the Board of Girls Inc. of the
+                        Island City and The Calculus RoundTable, located in the
+                        Bay Area.
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <button
+                          type="button"
+                          class="btn btn-dark"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -353,8 +570,7 @@
             </div>
           </div>
         </div>
-
-    </div>
+      </div>
     </section>
 
     <section class="sessions" id="sessions">
@@ -364,29 +580,32 @@
         to jobs.
       </p>
       <div class="info-grid">
-        <div class="session-box col-lg-6 col-sm-3">
-            <h4 class="text-warning">Main Stage</h4>
-            <p class="text-light">Community Leader</p>
-            <p class="text-light">Platform for Change</p>
-            <p class="text-light">STEM in Schools</p>
+        <div class="session-box col-lg-6">
+          <h4 class="text-warning">Main Stage</h4>
+          <p class="text-light">Community Leader</p>
+          <p class="text-light">Platform for Change</p>
+          <p class="text-light">STEM in Schools</p>
         </div>
-        <div class="session-box col-lg-6 col-sm-3">
-            <h4 class="text-warning">Tech Stage</h4>
-            <p class="text-light">Personal Tech Journey</p>
-            <p class="text-light">Information Security 101</p>
-            <p class="text-light">Game Development</p>
+        <div class="session-box col-lg-6">
+          <h4 class="text-warning">Tech Stage</h4>
+          <p class="text-light">Personal Tech Journey</p>
+          <p class="text-light">Information Security 101</p>
+          <p class="text-light">Game Development</p>
         </div>
-        <div class="session-box col-lg-6 col-sm-3">
-            <h4 class="text-warning">Career Stage</h4>
-            <p class="text-light">Bitwise Career Path</p>
-            <p class="text-light">Google Certs</p>
-            <p class="text-light">AWS Certs</p>
+      </div>
+      <div class="info-grid">
+        <div class="session-box col-lg-6">
+          <h4 class="text-warning">Career Stage</h4>
+          <p class="text-light">Bitwise Career Path</p>
+          <p class="text-light">Google Certs</p>
+          <p class="text-light">AWS Certs</p>
         </div>
-        <div class="session-box col-lg-6 col-sm-3">
+        <div class="session-box col-lg-6">
           <h4 class="text-warning">GDE Stage</h4>
           <p class="text-light">BigQuery Madness</p>
           <p class="text-light">Angular Libraries</p>
         </div>
+      </div>
     </section>
 
     <section class="attend" id="attend">
@@ -398,6 +617,8 @@
         <h4 class="why-box col-lg-6 col-sm-3 text-warning">
           Learn a New Skill
         </h4>
+      </div>
+      <div class="info-grid">
         <h4 class="why-box col-lg-6 col-sm-3 text-warning">Tell Your Story</h4>
         <h4 class="why-box col-lg-6 col-sm-3 text-warning">
           Meet Your Next Mentor
@@ -408,15 +629,39 @@
     <section class="sponsors mb-5" id="sponsors">
       <h2 class="text-center mt-5">Sponsors</h2>
       <div class="sponsor-grid col-12">
-        <img class="sponsor-image" alt="Stanislaus County Office of Education" src="https://user-images.githubusercontent.com/68982348/190878630-018d7e59-9f4d-417a-89b4-40d2e7cac4b5.png">
-        <img class="sponsor-image" alt="Stanislaus County Office of Education STEM" src="https://user-images.githubusercontent.com/68982348/190878631-e5c8702c-41a9-4db0-bd63-5e8e7a324429.png">
-        <img class="sponsor-image" alt="Google" src="https://user-images.githubusercontent.com/68982348/190878628-1d0186ce-76b3-4763-8aa5-4aa181a36aeb.png">
-    </div>
-    <div class="sponsor-grid col-12">
-        <img class="sponsor-image" alt="Bay Valley Tech" src="https://user-images.githubusercontent.com/68982348/190878657-0b99d88d-e9e2-433a-b7bb-c8db18c631f3.png">
-        <img class="sponsor-image" alt="Invest In Me" src="https://user-images.githubusercontent.com/68982348/190878629-3e8610c5-bd56-4077-b4e0-7a73c818f032.png">
-        <img class="sponsor-image" alt="Bitwise" src="https://user-images.githubusercontent.com/68982348/190878626-32e664b4-4a7e-499c-acd2-68a0e7b48e1f.png">
-    </div>
+        <img
+          class="sponsor-image"
+          alt="Stanislaus County Office of Education"
+          src="https://user-images.githubusercontent.com/68982348/190878630-018d7e59-9f4d-417a-89b4-40d2e7cac4b5.png"
+        />
+        <img
+          class="sponsor-image"
+          alt="Stanislaus County Office of Education STEM"
+          src="https://user-images.githubusercontent.com/68982348/190878631-e5c8702c-41a9-4db0-bd63-5e8e7a324429.png"
+        />
+        <img
+          class="sponsor-image"
+          alt="Google"
+          src="https://user-images.githubusercontent.com/68982348/190878628-1d0186ce-76b3-4763-8aa5-4aa181a36aeb.png"
+        />
+      </div>
+      <div class="sponsor-grid col-12">
+        <img
+          class="sponsor-image"
+          alt="Bay Valley Tech"
+          src="https://user-images.githubusercontent.com/68982348/190878657-0b99d88d-e9e2-433a-b7bb-c8db18c631f3.png"
+        />
+        <img
+          class="sponsor-image"
+          alt="Invest In Me"
+          src="https://user-images.githubusercontent.com/68982348/190878629-3e8610c5-bd56-4077-b4e0-7a73c818f032.png"
+        />
+        <img
+          class="sponsor-image"
+          alt="Bitwise"
+          src="https://user-images.githubusercontent.com/68982348/190878626-32e664b4-4a7e-499c-acd2-68a0e7b48e1f.png"
+        />
+      </div>
     </section>
 
     <footer>
