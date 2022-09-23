@@ -5,9 +5,15 @@ body {
 
 /* Home-Hero Section */
 .logo {
-    text-align: center;
-    height: 40vh;
-    padding: 10px;
+    height: 340px;
+    width: 340px;
+}
+.logo-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 /* Speakers Sections*/
@@ -76,13 +82,25 @@ body {
     width: 20%;
     height: 20%;
 }
-@media (max-width: 576px) {
-.sponsor-image {
-    width: 30%;
-    height: 20%;
-}}
 
 /* Footer */
 .footer-link {
     text-decoration: none;
 }
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .logo {
+        width: 175px;
+        height: 175px;
+    }}
+@media (max-width: 768px) {
+    .logo {
+        width: 230px;
+        height: 230px;
+    }}
+@media (max-width: 576px) {
+    .sponsor-image {
+        width: 30%;
+        height: 20%;
+    }}
