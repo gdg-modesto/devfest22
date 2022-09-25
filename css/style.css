@@ -3,6 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* NavBar */
+.navbar {
+    background-color: black;
+}
+.brand {
+    width: 250px;
+}
+
 /* Home-Hero Section */
 .logo {
     height: 340px;
@@ -84,6 +92,9 @@ body {
 }
 
 /* Footer */
+footer {
+    background-color: black;
+}
 .footer-link {
     text-decoration: none;
 }
