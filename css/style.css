@@ -101,6 +101,11 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 380px) {
+    .brand {
+        width: 200px;
+    }
+}
 @media (max-width: 576px) {
     .logo {
         width: 175px;
