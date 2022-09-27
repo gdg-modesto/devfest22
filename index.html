@@ -47,9 +47,6 @@
           <ul class="navbar-nav ms-auto fw-bold">
             <li><a class="nav-link active" href="index.html">Home</a></li>
             <li><a class="nav-link" href="speakers.html">Speakers</a></li>
-            <li><a class="nav-link" href="#sessions">Sessions</a></li>
-            <li><a class="nav-link" href="#attend">Why Attend</a></li>
-            <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
             <li>
               <a
                 class="nav-link"
@@ -57,6 +54,41 @@
                 target="_blank"
                 >Donate</a
               >
+            </li>
+            <li>
+              <noscript
+                ><a
+                  href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Buy Tickets on Eventbrite</a
+                ></noscript
+              >
+              <!-- You can customize this button any way you like -->
+              <button
+                id="eventbrite-widget-modal-trigger-404767429277"
+                type="button"
+                class="btn btn-warning fw-bold"
+              >
+                Register
+              </button>
+
+              <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+              <script type="text/javascript">
+                var exampleCallback = function () {
+                  console.log("Order complete!");
+                };
+
+                window.EBWidgets.createWidget({
+                  widgetType: "checkout",
+                  eventId: "404767429277",
+                  modal: true,
+                  modalTriggerElementId:
+                    "eventbrite-widget-modal-trigger-404767429277",
+                  onOrderComplete: exampleCallback,
+                });
+              </script>
             </li>
           </ul>
         </div>
@@ -88,12 +120,6 @@
             >Martin G. Petersen Event Center
           </h5>
           <h5 class="mb-3">720 12th St Modesto, CA 95354</h5>
-          <p class="fs-5">
-            DevFest is a community-run one-day conference aimed to bring
-            technologists, developers, students, tech companies, and speakers
-            together in one location to learn, discuss and experiment with
-            technology.
-          </p>
           <!-- Button that overlays a modal window -->
           <div>
             <!-- Noscript content for added SEO -->
@@ -132,6 +158,34 @@
             </script>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="about text-center" id="about">
+      <h2 class="mt-4">About</h2>
+      <p class="mx-5 fs-5">
+        DevFest is a community-run one-day conference aimed to bring
+        technologists, developers, students, tech companies, and speakers
+        together in one location to learn, discuss and experiment with
+        technology.
+      </p>
+      <p class="mx-5 fs-5">
+        Justice, Equity, Diversity, and Inclusion (J.E.D.I.) are at the
+        forefront of our mission.
+      </p>
+      <div class="info-grid">
+        <h4 class="why-box col-lg-6 col-sm-3 text-warning">
+          Become a J.E.D.I. Leader
+        </h4>
+        <h4 class="why-box col-lg-6 col-sm-3 text-warning">
+          Learn a New Skill
+        </h4>
+      </div>
+      <div class="info-grid">
+        <h4 class="why-box col-lg-6 col-sm-3 text-warning">Tell Your Story</h4>
+        <h4 class="why-box col-lg-6 col-sm-3 text-warning">
+          Meet Your Next Mentor
+        </h4>
       </div>
     </section>
 
@@ -615,24 +669,6 @@
           <p class="text-light">BigQuery Madness</p>
           <p class="text-light">Angular Libraries</p>
         </div>
-      </div>
-    </section>
-
-    <section class="attend" id="attend">
-      <h2 class="text-center mt-5">Why Attend?</h2>
-      <div class="info-grid">
-        <h4 class="why-box col-lg-6 col-sm-3 text-warning">
-          Become a J.E.D.I. Leader
-        </h4>
-        <h4 class="why-box col-lg-6 col-sm-3 text-warning">
-          Learn a New Skill
-        </h4>
-      </div>
-      <div class="info-grid">
-        <h4 class="why-box col-lg-6 col-sm-3 text-warning">Tell Your Story</h4>
-        <h4 class="why-box col-lg-6 col-sm-3 text-warning">
-          Meet Your Next Mentor
-        </h4>
       </div>
     </section>
 

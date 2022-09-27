@@ -56,21 +56,47 @@
               >
             </li>
             <li>
-              <a class="nav-link" href="index.html#sessions">Sessions</a>
-            </li>
-            <li>
-              <a class="nav-link" href="index.html#attend">Why Attend</a>
-            </li>
-            <li>
-              <a class="nav-link" href="index.html#sponsors">Sponsors</a>
-            </li>
-            <li>
               <a
                 class="nav-link"
                 href="https://www.amazon.com/hz/wishlist/ls/18C0XPNU9GP7W"
                 target="_blank"
                 >Donate</a
               >
+            </li>
+            <li>
+              <noscript
+                ><a
+                  href="https://www.eventbrite.com/e/devwars-a-devfest-2022-event-tickets-404767429277"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Buy Tickets on Eventbrite</a
+                ></noscript
+              >
+              <!-- You can customize this button any way you like -->
+              <button
+                id="eventbrite-widget-modal-trigger-404767429277"
+                type="button"
+                class="btn btn-warning fw-bold"
+              >
+                Register
+              </button>
+
+              <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+              <script type="text/javascript">
+                var exampleCallback = function () {
+                  console.log("Order complete!");
+                };
+
+                window.EBWidgets.createWidget({
+                  widgetType: "checkout",
+                  eventId: "404767429277",
+                  modal: true,
+                  modalTriggerElementId:
+                    "eventbrite-widget-modal-trigger-404767429277",
+                  onOrderComplete: exampleCallback,
+                });
+              </script>
             </li>
           </ul>
         </div>
