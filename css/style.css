@@ -39,6 +39,9 @@ body {
     width: 248px;
     object-fit: cover;
 }
+.card-body { 
+    background-color: black; 
+}
 .speaker-box {
     border-radius: 10px;
     background-image: url(/devfest22/img/BackgroundStars.jpg);
@@ -101,6 +104,11 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 380px) {
+    .brand {
+        width: 200px;
+    }
+}
 @media (max-width: 576px) {
     .logo {
         width: 175px;
