@@ -38,14 +38,10 @@ body {
     height: 248px;
     width: 248px;
     object-fit: cover;
+    /* background-image: url(/devfest22/img/BackgroundStars.jpg); */
 }
 .card-body { 
     background-color: black; 
-}
-.speaker-box {
-    border-radius: 10px;
-    background-image: url(/devfest22/img/BackgroundStars.jpg);
-    /*background-image from Unsplash, title: paul-volkmer-qVotvbsuM_c-unsplash*/
 }
 
 /* Sessions Section */
