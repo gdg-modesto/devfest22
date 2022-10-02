@@ -24,6 +24,11 @@ body {
     justify-content: center; 
 }
 
+/* About Section */
+.about {
+    background-color: #EEEEEE;
+}
+
 /* Speakers Sections*/
 .speaker-grid {
     display: flex;
@@ -38,9 +43,10 @@ body {
     height: 248px;
     width: 248px;
     object-fit: cover;
-    /* background-image: url(/devfest22/img/BackgroundStars.jpg); */
+    object-position: center top
 }
 .card-body { 
+    height: 210px;
     background-color: black; 
 }
 
@@ -55,10 +61,11 @@ body {
 .session-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 30px;
+    /* justify-content: center; */
     flex-direction: column;
-    height: 200px;
-    width: 300px;
+    height: 350px;
+    width: 310px;
     margin: 5px;
     border-radius: 10px;
     background-image: url(/devfest22/img/BackgroundStars.jpg);
